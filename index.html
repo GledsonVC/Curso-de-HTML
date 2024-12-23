@@ -307,8 +307,6 @@
 
 
         <h2>Formulário selecionavel multiplas escolhas</h2>
-
-
         <!--pripriedade 'type="checkbox"' para escolher entre um e outro nas variaveis podendo marcar quantos quiser-->
         <input type="checkbox" name="variavel" id="cx">
         <label for="cx">X</label>
@@ -321,7 +319,6 @@
         <hr>
 
         <h2>Selecionaveis</h2>
-
         <!--Tag "select" para criar tabela selecionáveis-->
         <select name="Letras" id="">
             <!--Tag "option" defini as opções possíveis para selecionar 
@@ -347,22 +344,62 @@
         <input type="submit" value="Enviar Formulário">
         <br><br>
         <hr>
-
-
     </form>
 
     <h2>Botão simples</h2>
-
     <label for="">Gostou do site:</label>
     <!--Tag "button" cria um botão simples-->
     <button>Sim</button>
+    <!--Simbolo '&nbsp;' utilizada para colocar um espaço-->
+    &nbsp;
     <button>Não</button>
-
     <br>
-    <hr>
-
     </p>
 
+    <p>
+        <hr>
+        <h2>Áudio de link Local</h2>
+        <!--Tag 'audio' utilizada para incluir áudio
+        propriedade controls para apresentar um controle de áudio-->
+        <audio controls>
+            <source src="./audio/Internet.mp3" type="audio/mpeg">
+        </audio>
+        <p>Som antigo onde utilizava para se conectar na internet COM opção de download</p>
+
+        <!--propriedade 'controlsList="nodownload"' para não permitir download no controle de audio-->
+        <audio controls controlsList="nodownload">
+            <source src="./audio/Internet.mp3" type="audio/mpeg">
+        </audio>
+        <p>Som antigo onde utilizava para se conectar na internet SEM opção de download</p>
+
+        <h2>Áudio de link Externo</h2>
+        <!--Tag 'audio' utilizando link de projeto externo-->
+        <audio controls controlsList="nodownload">
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        </audio>
+        <p>Som de audio de site/link externo</p>
+    </p>
+
+    <p>
+        <hr>
+        <h2>Video de link Local</h2>
+        <!--Tag 'video' utilizada para incluir video
+        propriedade 'poster=""' para definir uma imagem inicial antes de rodar o video
+        -->
+        <video poster="./img/perfil.jpg" width="100%" controls>
+            <source src="./video/nado-piscina.mp4" type="video/mp4">
+        </video>
+
+        <h2>Video iniciando automático</h2>
+        <!--Tag 'video' utilizada para incluir video
+        propriedade 'autoplay' para iniciar vídeo automático. não são todos navegador que funciona
+        propriedade 'disablepictureinpicture' para desabilitar para não ver picture em picture
+        propriedade 'controlsList="nofullscreen"' desabilita  permitir ver o vídeo em tela cheia
+        -->
+        <video width="100%" autoplay controls disablepictureinpicture controlsList="nodownload nofullscreen">
+            <source src="./video/nado-piscina.mp4" type="video/mp4">
+        </video>
+    </p>
 
 </body>
 
